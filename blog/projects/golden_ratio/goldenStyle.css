@@ -1,0 +1,28 @@
+.six{
+    height: 700px;
+    width: auto;
+    display: flex;
+    
+}
+.five{
+    width: 38%;
+    display: flex;
+}
+.four{
+    height:38% ;
+    width:100%;
+}
+.three{
+    width: 38%;
+    height: 100%;
+}
+.two{
+    height:38% ;
+    width:100%;
+}
+.one{
+    width: 38%;
+    height: 100%;
+}
+
+
