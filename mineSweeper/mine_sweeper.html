@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="mindStyle.css">
+</head>
+<body>
+<div class="center">
+    <table id="myTable">
+       
+    </table>
+</div>
+</body>
+<script>
+    
+    var table="";
+    for(var j=0; j<=90; j=j+10){ 
+        table+= "<tr>";
+        for(var i=1; i<=10;i++){
+            var value= i+j;
+            table+= "<td onclick='clicked(this)'id='"+value+"'>"+value+"</td> ";
+        }
+        table+="</tr>\n";
+        
+    }
+document.getElementById("myTable").innerHTML= table;
+var num;
+var clicked=(cell)=>{
+    var selected = cell.innerHTML;
+    var multiples;
+    for(var i =1; i<=100; i++){
+    if(multiples>99)
+    break; 
+    multiples=(selected*i);
+    document.getElementById(multiples+"").innerHTML="*";
+   }
+}
+
+</script>
+</html>
